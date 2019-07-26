@@ -1,11 +1,10 @@
 package com.ted.books;
 
-import android.databinding.DataBindingUtil;
+
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.ted.books.databinding.ActivityBookDetailBinding;
 
 public class BookDetail extends AppCompatActivity {
 
