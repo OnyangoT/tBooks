@@ -1,57 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:weightSum="100">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/book_open"
-        android:padding="8dp"/>
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:padding="8dp"
+        android:src="@drawable/book_open" />
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="85"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="85">
+        android:orientation="vertical">
+
         <TextView
-            android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/title_size"
-            android:text="Title Text"/>
+            android:text="Title TextView"/>
+
         <TextView
-            android:id="@+id/tvAuthors"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/tvAuthors"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="@dimen/authors"
-            android:text="Title Text"/>
+            android:textSize="@dimen/authors_size"
+            android:text="Title TextView"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="100"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="70"
-                android:id="@+id/tvAuthors"
-                android:textAlignment="textStart"
+                android:id="@+id/tvPublisher"
                 android:layout_gravity="start"
                 android:text="Publisher"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="30"
-                android:id="@+id/tvPublisher"
-                android:textAlignment="textEnd"
+                android:id="@+id/tvAuthors"
                 android:layout_gravity="end"
                 android:text="Publisher"
-                android:paddingEnd="@dimen/published_date_pudding"
-                android:paddingRight="@dimen/published_date_pudding"/>
+                android:paddingEnd="@dimen/published_date_padding"
+                android:paddingRight="@dimen/published_date_padding"/>
 
         </LinearLayout>
+
 
     </LinearLayout>
 
