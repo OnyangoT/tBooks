@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">Books</string>
-    <string name="error_loading_data_from_google_books_api">Error loading data from Google Books API</string>
+    <string name="app_name">tBooks</string>
+    <string name="error_data_message">Error loading data from Google Books</string>
+    <string name="search">Search</string>
+    <string name="image_description">Book Image</string>
+    <string name="loading_error">Error loading file from Google Books API</string>
 </resources>

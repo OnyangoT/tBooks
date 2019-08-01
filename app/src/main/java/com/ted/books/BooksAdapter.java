@@ -51,7 +51,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BookViewHold
             super(itemView);
             tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
             tvAuthors = (TextView) itemView.findViewById(R.id.tvAuthors);
-            tvDate = (TextView) itemView.findViewById(R.id.tvPublisher);
+            tvDate = (TextView) itemView.findViewById(R.id.tvAuthors);
             tvPublisher = (TextView) itemView.findViewById(R.id.tvAuthors);
             itemView.setOnClickListener(this);
         }
